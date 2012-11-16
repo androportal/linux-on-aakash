@@ -10,3 +10,8 @@ Steps to set up hardware
 
 #. The board details can be found `here <https://github.com/androportal/OLINUXINO>`_
 
+
+ `Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 
+
+ Next topic: `Setting up software tool chain <https://github.com/androportal/linux-on-aakash/blob/master/setting_up_software_toolchain.rst>`_
+

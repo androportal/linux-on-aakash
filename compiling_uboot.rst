@@ -55,6 +55,10 @@ UBOOT INSTALLATION ON SDCARD
 At this point we have a bootable sdcard readly. Get kernel and rootfs to make a usuable
 Linux for your tablet. 
 
+`Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 
+
+ Next topic: `Compiling kernel <https://github.com/androportal/linux-on-aakash/blob/master/compiling_kernel.rst>`_
+
 
 
     

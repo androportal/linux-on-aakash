@@ -122,3 +122,8 @@ as faster than any other desktop enviroment.
 
 #. Remove the sdcard and insert it in your tablet, power on to get ubuntu 12.04
    lxde desktop
+
+
+`Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 
+
+ 

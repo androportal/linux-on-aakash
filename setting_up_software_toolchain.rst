@@ -50,3 +50,7 @@ Steps to set up on software side
 
    N.B: The above serial port setup and minicom are totally optional and will
    not be discussed later. Please search in web for more details. 
+
+`Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 
+
+ Next topic: `Compiling u-boot <https://github.com/androportal/linux-on-aakash/blob/master/compiling_uboot.rst>`_

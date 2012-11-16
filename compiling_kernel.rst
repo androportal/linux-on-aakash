@@ -149,4 +149,8 @@ KERNEL ON SDCARD
 At this point we have a sdcard readly with kernel. Burn uboot and copy rootfs to make a usuable
 Linux for your tablet. 
 
+
+`Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 
+
+ Next topic: `Getting file system ready <https://github.com/androportal/linux-on-aakash/blob/master/getting_file_system_ready.rst>`_
     
