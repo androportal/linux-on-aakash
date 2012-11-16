@@ -15,7 +15,7 @@ Steps to set up on software side
 
 #. Install dependencies for kernel compilation ::
 
-	apt-get install build-essential dpkg-dev kernel-wedge make automake checkinstall git 
+	apt-get install build-essential dpkg-dev kernel-wedge make automake checkinstall git u-boot-tools
 
 #. You may also need *adb* and *qemu-user-static* for getting ``script.bin``
    from android and to install packages in chrooted Linux. We will get back to  

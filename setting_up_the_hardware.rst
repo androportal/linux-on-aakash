@@ -1,6 +1,6 @@
-=====================
-Steps to set hardware
-=====================
+========================
+Steps to set up hardware
+========================
 
 #. Get a sdcard of 4 GB or above
 
