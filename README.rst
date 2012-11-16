@@ -11,15 +11,15 @@ To report any bugs please raise ``issues``.
 LIST OF CONTENTS
 ----------------
 
-#. Setting up the hardware 
+#. `Setting up the hardware <https://github.com/androportal/linux-on-aakash/blob/master/setting_up_the_hardware.rst>`_
 
-#. Setting up software tool chain
+#. `Setting up software tool chain <https://github.com/androportal/linux-on-aakash/blob/master/setting_up_software_toolchain.rst>`_
 
-#. Compiling u-boot
+#. `Compiling u-boot <https://github.com/androportal/linux-on-aakash/blob/master/compiling_uboot.rst>`_
 
-#. Compiling kernel
+#. `Compiling kernel <https://github.com/androportal/linux-on-aakash/blob/master/compiling_kernel.rst>`_
 
-#. Getting file system ready
+#. `Getting file system ready <https://github.com/androportal/linux-on-aakash/blob/master/getting_file_system_ready.rst>`_
 
 #. Tablet tweaks
 
