@@ -69,7 +69,7 @@ as faster than any other desktop enviroment.
 #. Now install minimal X environment to test our setup ::
 
 	apt-get install vim.tiny sudo ssh net-tools ethtool \
-         wireless-tools lxde lxappearence lxsession lxdm xinit xorg\
+         wireless-tools lxde xinit xorg network-manager iputils-ping \
          python-gi-cairo onboard utouch rsyslog alsa-utils gnome-mplayer\
          
 #. Add user and set permissions ::
@@ -87,10 +87,20 @@ as faster than any other desktop enviroment.
 
 #. Similarly open ``/etc/hosts`` and remove its content and add these two lines::
 
-	127.0.0.1    localhost.localdomain localhost
+	127.0.0.1    localhost
 	127.0.1.1    aakash-arm
 
-#. Open ``/etc/modules`` file and add ``gt818_ts`` in a new line 
+#. Open ``/etc/modules`` file and append these two lines ::
+
+	gt811_ts
+	rtlwifi
+
+#. Add these lines in ``/etc/rc.local`` to activate swap at boot time::
+
+	# Added for Aakash, assuming the last partition will be swap in all future builds
+	mkswap /dev/mmcblk0p3
+	swapon /dev/mmcblk0p3
+
 
 #. Open ``/etc/lxdm/lxdm.conf`` and modify it for autologin. Change the autologin
    section in the top of the file to this ::
@@ -102,8 +112,7 @@ as faster than any other desktop enviroment.
    ``/<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.42+/`` to your arm
    ubuntu setup ::
 
-   sudo cp -r /<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.42+/   
-              /media/<ext4 partition of sdcard>/lib/modules/
+   sudo cp -r /<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.42+/ /media/<ext4 partition of sdcard>/lib/modules/
 
 
 #. Download rtl8192cufw.bin from this

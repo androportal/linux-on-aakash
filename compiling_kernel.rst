@@ -108,6 +108,8 @@ KERNEL ON SDCARD
         Last sector, +sectors or +size{K,M,G} (34816-7744511, default 7744511): 
         Using default value 7744511
 
+#. (Optional) If you intend to use ``swap`` partion, leave atleast ~300MB in previous step and create a 3rd primary partition.
+
 #. Now as we have created 2 primary partitions now let's write(w) the changes to disk. For that issue::
 
         Command (m for help): w
