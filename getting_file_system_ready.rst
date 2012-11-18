@@ -71,6 +71,10 @@ as faster than any other desktop enviroment.
 	apt-get install vim.tiny sudo ssh net-tools ethtool \
          wireless-tools lxde xinit xorg network-manager iputils-ping \
          python-gi-cairo onboard utouch rsyslog alsa-utils gnome-mplayer\
+
+#. Few optional packages ::
+
+	apt-get install bash-completion lxtask
          
 #. Add user and set permissions ::
 
@@ -100,6 +104,21 @@ as faster than any other desktop enviroment.
 	# Added for Aakash, assuming the last partition will be swap in all future builds
 	mkswap /dev/mmcblk0p3
 	swapon /dev/mmcblk0p3
+
+
+#. To allow non root user to edit networking, change this file ::
+
+	/usr/share/polkit-1/actions/org.freedesktop.NetworkManager.policy
+
+	look for this section:
+	<action id="org.freedesktop.NetworkManager.settings.modify.sys tem">
+	
+	change <allow_active> to 'yes':
+	<defaults>
+	<allow_inactive>no</allow_inactive>
+	<allow_active>yes</allow_active>
+	</defaults>
+	</action>
 
 
 #. Open ``/etc/lxdm/lxdm.conf`` and modify it for autologin. Change the autologin
