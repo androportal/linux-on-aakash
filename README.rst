@@ -21,13 +21,15 @@ LIST OF CONTENTS
 
 #. `Getting file system ready <https://github.com/androportal/linux-on-aakash/blob/master/getting_file_system_ready.rst>`_
 
-#. Tablet tweaks
+#. `Tablet tweaks <https://github.com/androportal/linux-on-aakash/blob/master/tablet_tweaks.rst>`_
 
-#. FAQs
+#. `Known issues(must read) <https://github.com/androportal/linux-on-aakash/blob/master/known_issues.rst>`_
 
-#. TODO
+#. `FAQs <https://github.com/androportal/linux-on-aakash/blob/master/faqs.rst>`_
 
-#. References
+#. `TODO <https://github.com/androportal/linux-on-aakash/blob/master/todo.rst>`_
+
+#. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
 
 

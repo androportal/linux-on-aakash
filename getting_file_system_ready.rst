@@ -72,9 +72,26 @@ as faster than any other desktop enviroment.
          wireless-tools lxde xinit xorg network-manager iputils-ping \
          python-gi-cairo onboard utouch rsyslog alsa-utils gnome-mplayer\
 
-#. Few optional packages ::
+#. Few optional recommended packages for system utilities(lxtask, lxproxy and htop) ::
 
-	apt-get install bash-completion lxtask
+	apt-get install bash-completion lxtask htop \ 
+	python-central python-gobject-2 python-gtk2 synaptic\
+
+
+   Download `lxproxy <http://zevenos.com/files/lxproxy_0.1ubuntu3_all.deb>`_ and install using dpkg::
+
+	dpkg -i lxproxy_0.1ubuntu3_all.deb
+
+
+#. Few more optional packages for office suite, arduino development and pcb designing (testing purpuse)::
+
+	apt-get install libreoffice python-gnome2 python-gconf python-serial\
+	python-gtksourceview2 gcc-avr  binutils-avr  avr-libc avrdude python-xdg
+
+   Download  `gnoduiono <https://launchpad.net/~pmjdebruijn/+archive/gnoduino-release/+files/gnoduino_0.4.0-0pmjdebruijn4%7Eprecise_all.deb>`_ and install using dpkg::
+
+	dpkg -i gnoduino_0.4.0-0pmjdebruijn4~precise_all.deb
+	
          
 #. Add user and set permissions ::
 
