@@ -25,7 +25,7 @@ COMPILING KERNEL
         make ARCH=arm a13_defconfig
 
 
-#. Download the latest *.config* file from `here <https://github.com/downloads/androportal/linux-on-aakash/.config>`_ 
+#. Download the latest *.config* file from `here <https://github.com/downloads/androportal/linux-on-aakash/.config.20_11_2012_fbcon>`_ 
    and keep it in the root of the kernel source code directory (change the downloaded *config* file back to *.config*)
 
 
