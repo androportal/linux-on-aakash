@@ -6,7 +6,7 @@ As of now we have uboot and kernel ready for Aakash, the next step is to run few
 distribuition from here after. We will use ubuntu 12.04 LTS. Just for the  record we have also tried Debian wheezy which also works well. 
 
 The main war is between different desktop enviroments. With lot of testing
-and real world examples we finally decided to go with LXDE. There is lot
+and real world statistics we finally decided to go with LXDE. There is lot
 of scope for customization with LXDE and moreover its almost 50% lighter & twice
 as faster than any other desktop enviroment.
 
@@ -68,9 +68,9 @@ as faster than any other desktop enviroment.
 
 #. Now install minimal X environment to test our setup ::
 
-	apt-get install vim.tiny sudo ssh net-tools ethtool \
-         wireless-tools lxde xinit xorg network-manager iputils-ping \
-         python-gi-cairo onboard utouch rsyslog alsa-utils gnome-mplayer\
+	apt-get install vim.tiny sudo ssh net-tools ethtool wireless-tools lxde \    
+         xfce4-power-manager xinit xorg network-manager iputils-ping \
+         python-gi-cairo onboard utouch rsyslog alsa-utils gnome-mplayer \
 
 #. Few optional recommended packages for system utilities(lxtask, lxproxy and htop) ::
 

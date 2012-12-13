@@ -8,8 +8,7 @@ Steps to set up hardware
 
 #. Get serial port pins(Rx, Tx) out from the board for better debugging through ``minicom``, use level shifter and use USB to Serial converter if required (optional)
 
-#. The board details can be found `here
-   <https://github.com/androportal/OLINUXINO>`_
+#. A similar compatible board can be found `here <https://github.com/androportal/OLINUXINO>`_
 
 
  `Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 

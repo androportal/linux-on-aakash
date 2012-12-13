@@ -6,6 +6,8 @@ TODO: our wishlist
 
 #. Enabling(when actually available) MALI GPU for 3D acceleration
 
+#. Adding a boot splash
+
 #. And many more. You can also contribute to this list :-) 
 
 
