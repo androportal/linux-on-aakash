@@ -3,14 +3,14 @@ Step to make file system
 ========================
 
 As of now we have uboot and kernel ready for Aakash, the next step is to run few apps, to do so we need Linux file system. One can use any 
-distribuition from here after. We will use ubuntu 12.04 LTS. Just for the  record we have also tried Debian wheezy which also works well. 
+distribuition from here after. We will use ubuntu 12.10. Just for the  record we have also tried Debian wheezy which also works well. 
 
-The main war is between different desktop enviroments. With lot of testing
+The main war is between desktop enviroments. With lot of testing
 and real world statistics we finally decided to go with LXDE. There is lot
 of scope for customization with LXDE and moreover its almost 50% lighter & twice
 as faster than any other desktop enviroment.
 
-#. Insert sdcard again, download the core ubuntu 12.04.1 image from this `link <http://cdimage.ubuntu.com/ubuntu-core/releases/12.04/release/ubuntu-   core-12.04.1-core-armhf.tar.gz>`_ and save it in say /tmp directory. Extract the tar file in your sdcard's ext4 partition ::
+#. Insert sdcard again, download the core ubuntu 12.10 image from this `link <http://cdimage.ubuntu.com/ubuntu-core/releases/12.10/release/ubuntu-core-12.10-core-armhf.tar.gz>`_ and save it in say /tmp directory. Extract the tar file in your sdcard's ext4 partition ::
 	
 	cd /media/<ext4 partition of sdcard>
 
@@ -18,7 +18,7 @@ as faster than any other desktop enviroment.
    Now extract core ubuntu file system ::
 
 
-	sudo tar -xvpzhf /tmp/ubuntu-core-12.04.1-core-armhf.tar.gz 
+	sudo tar -xvpzhf /tmp/ubuntu-core-12.10-core-armhf.tar.gz 
 
 
 
@@ -70,7 +70,7 @@ as faster than any other desktop enviroment.
 
 	apt-get install vim.tiny sudo ssh net-tools ethtool wireless-tools lxde \    
          xfce4-power-manager xinit xorg network-manager iputils-ping \
-         python-gi-cairo onboard utouch rsyslog alsa-utils gnome-mplayer \
+         python-gi-cairo onboard rsyslog alsa-utils gnome-mplayer \
 
 #. Few optional recommended packages for system utilities(lxtask, lxproxy and htop) ::
 
@@ -165,8 +165,7 @@ as faster than any other desktop enviroment.
    unmount both the partitions (fat32 and ext4) from your machine, confirm with
    ``mount`` command to check nothing from sdcard is mounted
 
-#. Remove the sdcard and insert it in your tablet, power on to get ubuntu 12.04
-   lxde desktop
+#. Remove the sdcard and insert it in your tablet, power on to get ubuntu 12.10 lxde desktop
 
 
 `Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 
