@@ -2,6 +2,10 @@
 INTRODUCTION
 ============
 
+.. image::
+   https://lh3.googleusercontent.com/-z0r2Q9_tPnY/UMmhqLzNjNI/AAAAAAAABeU/vIP_4zMur4o/s773/aakash-logo.png
+   :target: http://www.it.iitb.ac.in/aakash2/index.jsp
+
 `Aakash <http://www.it.iitb.ac.in/aakash2/index.jsp>`_ is a low cost computing device/tablet for students, the project is initiated and funded by MHRD, Govt. of India. Aakash already runs Android 4.0 with many educational apps made by IIT Bombay. Please refer to http://github.com/androportal for some of the apps. 
 
 This is the landing page for the ``Linux on Aakash`` documentation. 
