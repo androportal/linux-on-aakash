@@ -48,7 +48,7 @@ UBOOT INSTALLATION ON SDCARD
 
         sudo dd if=spl/sunxi-spl.bin of=/dev/sdX bs=1024 seek=8
 
-   Similarly to burn ``u-boot.in`` issue ::
+   Similarly to burn ``u-boot.bin`` issue ::
 
         sudo dd if=u-boot.bin of=/dev/sdX bs=1024 seek=32
 
