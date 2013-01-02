@@ -37,7 +37,7 @@ List of contents
 
 #. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
-
+#. `An 8GB sdcard image for testing purpose, download untar and dd it to sdcard <https://docs.google.com/open?id=0B6KB6Sak5C4gYXNrNk4xd3UxQTA>`_
 
 
 
