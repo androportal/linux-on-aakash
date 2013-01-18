@@ -38,7 +38,7 @@ List of contents
 
 #. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
-#. `An 8GB sdcard image for testing purpose, download untar and dd it to sdcard <https://docs.google.com/open?id=0B6KB6Sak5C4gYXNrNk4xd3UxQTA>`_
+#. `Click to download a ready to use ubuntu-12.10 custom lxde image. Untar and dd it carefully to 8GB sdcard <http://aakashlabs.org/app/webroot/builds/12.10-lxde-bootLogo-0secUboot-close-expeyes-scilab-sleep1.img.bz2>`_
 
 
 
