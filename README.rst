@@ -36,9 +36,10 @@ List of contents
 
 #. `TODO <https://github.com/androportal/linux-on-aakash/blob/master/todo.rst>`_
 
-#. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
+#. `References
+   <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
-#. `Click to download a ready to use ubuntu-12.10 custom lxde image. Untar and dd it carefully to 8GB sdcard <http://aakashlabs.org/app/webroot/builds/12.10-lxde-bootLogo-0secUboot-close-expeyes-scilab-sleep1.img.bz2>`_
+#. `Click to download a ready to use ubuntu-12.10 custom lxde image. Untar and dd it carefully to 8GB sdcard <http://aakashlabs.org/builds/12.10-lxde-pyfinder-screen-on-off-aakash-bootlogo-04-02-2013.img.bz2>`_
 
 
 
