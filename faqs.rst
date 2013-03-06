@@ -64,6 +64,56 @@ Frequently asked questions
    get this tool from https://github.com/linux-sunxi/sunxi-tools. More
    info about script.bin can be found http://linux-sunxi.org/Fex_Guide
 
+#. I'm getting following error when I do ``adb devices``? ::
+     
+     List of devices attached
+     ????????????    no permissions
+   
+
+   We have two work-arounds for that, 
+
+   * login as root and repeat the command again ::
+
+       adb devices
+
+     if it still gives you error, then you have to kill the **adb**
+     process using ::
+   
+       killall adb
+   
+   * Second is the recommended one. You should make your device to be
+     identified by your system. Every device has it own unique `Vendor
+     ID`. This ID should be added to you system **udev** rules. To do
+     this type ::
+       
+       lsusb
+
+     this will output something like ::
+       
+       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+       Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+       Bus 001 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+       Bus 002 Device 002: ID 8087:0024 Intel Corp. Integrated Rate Matching Hub
+       Bus 001 Device 004: ID 10f1:1a36 Importek 
+       Bus 002 Device 007: ID 0cf3:3005 Atheros Communications, Inc. AR3011 Bluetooth
+       Bus 002 Device 008: ID 19d2:1351 ZTE WCDMA Technologies MSM 
+
+     where the last line is my android phone attached via USB. Notice
+     the string **19d2:1351** wherein, the `19d2` is my vendor ID.
+
+     Now create a file ``/etc/udev/rules.d/51-android.rules`` if it
+     does not exist and copy below line to the file ::
+
+       SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", MODE="0666", GROUP="plugdev"
+
+     replace ``192d`` with your device's vendor ID. Save and close the
+     file. You need to have root access to create/edit this file. Now
+     your system should be able to detect your android device as a
+     normal user.
+
+     For more info, please visit
+     http://developer.android.com/tools/device.html
+
 #. How to contribute ?
 
    Write to us, you can do lot of fancy stuff like building custom
