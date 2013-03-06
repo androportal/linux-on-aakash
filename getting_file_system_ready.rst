@@ -50,11 +50,13 @@ as faster than any other desktop enviroment.
 	sudo chroot /media/<ext4 partition of sdcard>/
 
 
-#. The above two steps can be combined together as a script say,
-   `ch-mount.sh <https://github.com/downloads/androportal/linux-on-aakash/ch-mount.sh>`_. From here after we will call this script to mount and un-mount fs. Please read this script to get any further help ::
+#. The above two steps can be combined together using a simple bash
+   `ch-mount.sh
+   <https://github.com/psachin/bash_scripts/blob/master/ch-mount.sh>`_. From
+   here onwards we will use this script to mount and un-mount
+   fs. Please read this script to get any further help ::
 
 	sudo ch-mount.sh -m /media/<ext4 partition of sdcard>/
-
 
 #. Now we have a chroot environment with all ``proc, dev, sys, dev/pts`` mounted,
    so run update to fetch repository informations (as chroot has root prompt so
