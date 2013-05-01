@@ -98,27 +98,44 @@ Frequently asked questions
        Bus 002 Device 007: ID 0cf3:3005 Atheros Communications, Inc. AR3011 Bluetooth
        Bus 002 Device 008: ID 19d2:1351 ZTE WCDMA Technologies MSM 
 
-     where the last line is my android phone attached via USB. Notice
-     the string **19d2:1351** wherein, the `19d2` is my vendor ID.
 
-     Now create a file ``/etc/udev/rules.d/51-android.rules`` if it
-     does not exist and copy below line to the file ::
+     where the last line is my android phone attached via USB.
+
+     Notice the string **19d2:1351** wherein, the `19d2` is my vendor ID.
+
+     Now create a file ``/etc/udev/rules.d/51-android.rules`` if it does not exist and copy below line to the file ::
 
        SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", MODE="0666", GROUP="plugdev"
 
-     replace ``192d`` with your device's vendor ID. Save and close the
-     file. You need to have root access to create/edit this file. Now
-     your system should be able to detect your android device as a
-     normal user.
+     replace ``192d`` with your device's vendor ID. Save and close the file. You need to have root access to create/edit this file. Now \
+     your system should be able to detect your android device as a normal user.
 
      For more info, please visit
      http://developer.android.com/tools/device.html
+
+#. How do I test this image without aakash tablet?
+
+   This is an ARM architecture image, tailor made for aakash. The best way to 
+   test this images is to run on real hardware. If at all you want to try on x86 machine 
+   then install the following packages :
+
+
+	#. Install qemu-user-static from synaptic or do apt-get install qemu-user-static
+
+	#. Download and untar aakash-linux from `here <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-lxde-bootLogo-0secUboot-close-expeyes-scilab-sleep1.img.bz2>`_
+
+	#. Now get an 8GB sdcard(backup your data, if any), use card reader or your laptop's card slot to write img file to sdcard. Download and   install `ddMaker <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/ddmaker-1.0.1.all.deb>`_ . Run ddmaker and follow the onscreen instructions to write image to sdcard. This process will take 40 minutes approximately. 
+
+	#. Download this `ch-mount.sh <https://github.com/psachin/bash_scripts/blob/master/ch-mount.sh>`_ script. Your sdcard will have two visible partitions. The second partition will have a big number associated with it(you may confirm using 'mount' command). Then use this command to get root access of aakash-linux ::
+
+   	       sudo ch-mount.sh -m /media/<your-username>/<ext4 partition of sdcard>/
 
 #. How to contribute ?
 
    Write to us, you can do lot of fancy stuff like building custom
    apps, fixing bugs, cross compiling, writing good documents, manuals
    etc
+
 
 
 `Back to main page <https://github.com/androportal/linux-on-aakash/blob/master/README.rst>`_ 
