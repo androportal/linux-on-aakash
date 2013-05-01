@@ -38,9 +38,9 @@ List of contents
 
 #. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
-#. `Click to download a ready to use ubuntu-12.10 custom lxde image. Untar and dd it carefully to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-lxde-bootLogo-0secUboot-close-expeyes-scilab-sleep1.img.bz2>`_
+#. `Click to download a ready to use ubuntu-12.10 custom lxde image. Untar and dd it carefully to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-lxde-bootLogo-0secUboot-expeyes-scilab-on-cloud-sleep1.img.bz2>`_
 
-MD5SUM for above GNU/Linux `bz2` image ``b24dcbca61607c2ade9e748541e92087``
+MD5SUM for above GNU/Linux `bz2` image ``d97ae407c43597a1cc26f2718804fbf8``
 
 To write(dd) image on an 8GB sdcard, you may use a graphical tool `ddMaker-1.0.1.all.deb <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/ddmaker-1.0.1.all.deb>`_  
 
