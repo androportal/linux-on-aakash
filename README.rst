@@ -9,11 +9,11 @@ funded by MHRD, Govt. of India. Aakash already runs Android 4.0 with
 many educational apps developed at IIT Bombay. Please refer to `androportal
 <http://github.com/androportal>`_ for some of the apps.
 
+You may want to check out our `youtube videos <http://www.youtube.com/playlist?list=PLwgNlwaUyn2morz05AJCzScLTQparFJVT>`_.  
+
 This is the landing page for the **Linux on Aakash** documentation.
-For any questions and discussions please join us on Aakash `forum <http://aakashlabs.org/forum/>`_
 To report any bugs please raise `issues
 <https://github.com/androportal/linux-on-aakash/issues>`_.
-
 
 List of contents
 ----------------
