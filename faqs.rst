@@ -103,32 +103,53 @@ Frequently asked questions
 
      Notice the string **19d2:1351** wherein, the `19d2` is my vendor ID.
 
-     Now create a file ``/etc/udev/rules.d/51-android.rules`` if it does not exist and copy below line to the file ::
+     Now create a file ``/etc/udev/rules.d/51-android.rules`` if it
+     does not exist and copy below line to the file ::
 
        SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", MODE="0666", GROUP="plugdev"
 
-     replace ``192d`` with your device's vendor ID. Save and close the file. You need to have root access to create/edit this file. Now \
-     your system should be able to detect your android device as a normal user.
+     replace ``192d`` with your device's vendor ID. Save and close the
+     file. You need to have root access to create/edit this file. Now
+     \ your system should be able to detect your android device as a
+     normal user.
 
      For more info, please visit
      http://developer.android.com/tools/device.html
 
 #. How do I test this image without aakash tablet?
 
-   This is an ARM architecture image, tailor made for aakash. The best way to 
-   test this images is to run on real hardware. If at all you want to try on x86 machine 
-   then install the following packages :
+   This is an ARM architecture image, tailor made for aakash. The best
+   way to test this images is to run on real hardware. If at all you
+   want to try on x86 machine then install the following packages :
 
 
-	#. Install qemu-user-static from synaptic or do apt-get install qemu-user-static
+   #. Install qemu-user-static from synaptic or do apt-get install qemu-user-static
 
-	#. Download and untar aakash-linux from `here <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-lxde-bootLogo-0secUboot-close-expeyes-scilab-sleep1.img.bz2>`_
+   #. Download and untar aakash-linux from `here
+      <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-lxde-bootLogo-0secUboot-close-expeyes-scilab-Oscad-16-06-2013.img.bz2>`_
 
-	#. Now get an 8GB sdcard(backup your data, if any), use card reader or your laptop's card slot to write img file to sdcard. Download and   install `ddMaker <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/ddmaker-1.0.1.all.deb>`_ . Run ddmaker and follow the onscreen instructions to write image to sdcard. This process will take 40 minutes approximately. 
+   #. Now get an 8GB sdcard(backup your data, if any), use card reader
+      or your laptop's card slot to write img file to sdcard. Download
+      and install `ddMaker
+      <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/ddmaker-1.0.1.all.deb>`_
+      . Run ddmaker and follow the onscreen instructions to write
+      image to sdcard. This process will take 40 minutes
+      approximately.
+   
+   #. or you can simply use the ``dd`` command ::
 
-	#. Download this `ch-mount.sh <https://github.com/psachin/bash_scripts/blob/master/ch-mount.sh>`_ script. Your sdcard will have two visible partitions. The second partition will have a big number associated with it(you may confirm using 'mount' command). Then use this command to get root access of aakash-linux ::
+	dd if=/path/to/an/image/file.img of=/dev/sdb bs=1024
 
-   	       sudo ch-mount.sh -m /media/<your-username>/<ext4 partition of sdcard>/
+      assuming your sdcard is detected as ``sdb``
+      
+   #. Download this `ch-mount.sh
+      <https://github.com/psachin/bash_scripts/blob/master/ch-mount.sh>`_
+      script. Your sdcard will have two visible partitions. The second
+      partition will have a big number associated with it(you may
+      confirm using 'mount' command). Then use this command to get
+      root access of aakash-linux ::
+
+	sudo ch-mount.sh -m /media/<your-username>/<ext4 partition of sdcard>/
 
 #. How to contribute ?
 
