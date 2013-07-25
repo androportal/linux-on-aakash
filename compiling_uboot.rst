@@ -41,7 +41,9 @@ UBOOT INSTALLATION ON SDCARD
 
         sudo fdisk -u=sectors /dev/sdX
 
+#. First clear the previous u-boot and its configurations if any::
 
+		sudo dd if=/dev/zero of=/dev/sdX bs=1024 seek=544 count=128
 
 #. Now from same ``uboot-allwinner`` directory issue these commands, again replace 
    X with suitable value, now to burn ``sunxi-spl.bin`` to sdcard issue::
