@@ -20,13 +20,13 @@ COMPILING KERNEL
 
         git checkout sunxi-3.0
 
-#. Compile the a13_configuration ::
+#. Compile the a13_configuration(optional, not required if you are using our config file) ::
 
         make ARCH=arm a13_defconfig
 
 
-#. Download the latest *.config* file from `here <https://github.com/downloads/androportal/linux-on-aakash/.config.20_11_2012_fbcon>`_ 
-   and keep it in the root of the kernel source code directory (change the downloaded *config* file back to *.config*)
+#. Download the latest *.config* file from `here <https://raw.github.com/androportal/linux-sunxi/sunxi-3.0/.config>`_ 
+   and keep it in the root of the kernel source code directory
 
 
 #. A13-OLinuXino customization can be done using(optional) ::
@@ -50,7 +50,7 @@ COMPILING KERNEL
 
 #.  After successful compilation ``uImage`` will be available at ``arch/arm/boot/uImage`` and
     also find ``script.bin`` in the root of the directory(This section is subject to change), the
-    kernel modules are available at ``out/lib/modules/3.0.42+/`` 
+    kernel modules are available at ``out/lib/modules/3.0.76+/`` 
     
 
 
