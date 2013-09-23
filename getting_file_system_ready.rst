@@ -33,7 +33,7 @@ as faster than any other desktop enviroment.
 	deb http://ports.ubuntu.com/ubuntu-ports/ precise main universe multiverse restricted
 	deb-src http://ports.ubuntu.com/ubuntu-ports/ precise main  universe multiverse restricted
 
-#. Now set up chroot environment ::
+#. Now set up chroot environment manually or use the `ch-mount.sh` script mentioned two steps later::
 
 	sudo mount -t proc /proc /media/<ext4 partion of sdcard>/proc
 
@@ -56,7 +56,7 @@ as faster than any other desktop enviroment.
    here onwards we will use this script to mount and un-mount
    fs. Please read this script to get any further help ::
 
-	sudo ch-mount.sh -m /media/<ext4 partition of sdcard>/
+	sudo bash ch-mount.sh -m /media/<ext4 partition of sdcard>/
 
 #. Now we have a chroot environment with all ``proc, dev, sys, dev/pts`` mounted,
    so run update to fetch repository informations (as chroot has root prompt so
