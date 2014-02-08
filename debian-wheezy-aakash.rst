@@ -3,14 +3,16 @@ Build minimal Debian wheezy for Aakash
 ======================================
 
 
-Steps to set up hardware
-------------------------
+Hardware requirements
+----------------------
 
-#. Get a sdcard of 1 GB or above
+#. sdcard of 1 GB or above
+
+#. Aakash-2 tablet (Allwinner A13 tablet)
 
 #. A USB hub, keyboard and mouse (optional)
 
-#. A similar `compatible <https://github.com/androportal/OLINUXINO>`_ (optional)
+A similar `compatible board <https://github.com/androportal/OLINUXINO>`_ (optional)
 
 
 Setting up software toolchain
