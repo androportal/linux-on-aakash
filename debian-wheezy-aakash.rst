@@ -8,9 +8,9 @@ Steps to set up hardware
 
 #. Get a sdcard of 1 GB or above
 
-#. A usb hub, keyboard and mouse (optional)
+#. A USB hub, keyboard and mouse (optional)
 
-#. A similar compatible board can be found `here <https://github.com/androportal/OLINUXINO>`_
+#. A similar `compatible <https://github.com/androportal/OLINUXINO>`_ (optional)
 
 
 Setting up software toolchain

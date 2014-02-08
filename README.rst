@@ -1,3 +1,5 @@
+README
+======
 
 .. image::
    https://lh3.googleusercontent.com/-z0r2Q9_tPnY/UMmhqLzNjNI/AAAAAAAABeU/vIP_4zMur4o/s773/aakash-logo.png
@@ -11,8 +13,14 @@ many educational apps developed at IIT Bombay. Please refer to `androportal
 
 You may want to check out our `youtube videos <http://www.youtube.com/playlist?list=PLwgNlwaUyn2morz05AJCzScLTQparFJVT>`_.  
 
-This page contains instructions for the **Debian on Aakash** .
-To report any bugs please raise `issues
-<https://github.com/androportal/linux-on-aakash/issues>`_.
+This page contains instructions on the `debian-wheezy-aakash <https://github.com/androportal/linux-on-aakash/blob/debian/debian-wheezy-aakash.rst>`_
+
+For more details please visit 
+
+#. `https://alioth.debian.org/projects/aakash/ <https://alioth.debian.org/projects/aakash/>`_
+
+#. `https://wiki.debian.org/DebianAakash <https://wiki.debian.org/DebianAakash>`_
+
+#.  `Mailing list <https://lists.alioth.debian.org/mailman/listinfo/aakash-hackers>`_
 
 
