@@ -18,9 +18,9 @@ A similar `compatible board <https://github.com/androportal/OLINUXINO>`_ (option
 Setting up software toolchain
 -----------------------------
 
-#. Install cross compiler *gcc-arm-linux-gnueabihf*  ::
+#. Install cross compiler *gcc-arm-linux-gnueabihf* (on Ubuntu or its derivatives).
+   For Debian include this repo ``http://emdebian.org/~thibg/repo/``
 
-	sudo apt-get install gcc-arm-linux-gnueabihf 
 
 #. Other required programs ::
 
