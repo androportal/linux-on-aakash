@@ -51,7 +51,7 @@ COMPILING UBOOT
 
 #.  To compile U-boot ::
 
-        make a13_olinuxino CROSS_COMPILE=gcc-arm-linux-gnueabihf-
+        make a13_olinuxino CROSS_COMPILE=arm-linux-gnueabihf-
 
 
 #.  After successful compilation ``u-boot.bin`` will be available at root of the
