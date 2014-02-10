@@ -280,6 +280,9 @@ Step to make file system
 
 	sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
 
+#. Now mount the second ext4 partition to ``rootfs`` ::
+
+	sudo mount -t ext4 /dev/sdX2 rootfs
 
 #. Now download this simple script `ch-mount.sh
    <https://github.com/psachin/bash_scripts/blob/master/ch-mount.sh>`_ to perform
