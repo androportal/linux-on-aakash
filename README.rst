@@ -15,7 +15,10 @@ You may want to check out our `youtube videos <http://www.youtube.com/playlist?l
 
 This page contains instructions on the `debian-wheezy-aakash <https://github.com/androportal/linux-on-aakash/blob/debian/debian-wheezy-aakash.rst>`_
 
-For more details please visit 
+
+Resources
+
+#. `Download image <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/aakash-debian-wheezy.img.xz>`_ md5sum `8c8027c2f712f998085ceadbdf413424`
 
 #. `https://alioth.debian.org/projects/aakash/ <https://alioth.debian.org/projects/aakash/>`_
 
