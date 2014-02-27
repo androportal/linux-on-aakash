@@ -38,7 +38,7 @@ List of contents
 
 #. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
-#. `Click to download a ready to use ubuntu-12.10 custom lxde image. Untar and dd it carefully to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-Aakash2-Linux-27-08-2013.img.xz>`_
+#. `Right Click & 'Save Link As' to download ubuntu-12.10 based custom lxde image. Uncompress and dd it to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-Aakash2-Linux-27-08-2013.img.xz>`_
 
 MD5SUM for above GNU/Linux `xz` image ``0ae03ee9daa4918e8e0f04fb7c7d62da``
 
