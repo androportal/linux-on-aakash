@@ -40,7 +40,7 @@ List of contents
 
 #. `Click to download a ready to use ubuntu-12.10 custom lxde image. Untar and dd it carefully to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-Aakash2-Linux-27-08-2013.img.xz>`_
 
-MD5SUM for above GNU/Linux `xz` image ``7cd09b85148c02ddbb4c92d1bf190d0d``
+MD5SUM for above GNU/Linux `xz` image ``0ae03ee9daa4918e8e0f04fb7c7d62da``
 
 To write(dd) image on an 8GB sdcard, you may use a graphical tool `ddMaker-1.0.1.all.deb <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/ddmaker-1.0.1.all.deb>`_  
 
