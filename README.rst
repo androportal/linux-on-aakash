@@ -42,6 +42,6 @@ List of contents
 
 MD5SUM for above GNU/Linux `xz` image ``0ae03ee9daa4918e8e0f04fb7c7d62da``
 
-To write(dd) image on an 8GB sdcard, you may use a graphical tool `ddMaker-1.0.1.all.deb <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/ddmaker-1.0.1.all.deb>`_  
+To write(dd) image on an 8GB sdcard, you may use a graphical tool `ddMaker-1.0.1.all.deb <http://www.it.iitb.ac.in/AakashApps/repo/download.php>`_  
 
 
