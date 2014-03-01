@@ -40,7 +40,9 @@ List of contents
 
 #. `Click to download Ubuntu-12.10 based custom lxde image. Uncompress and dd it to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/download.php>`_
 
-For wget users  `wget -c http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-Aakash2-Linux-27-08-2013.img.xz`	
+For wget users  ::
+
+	wget -c http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-Aakash2-Linux-27-08-2013.img.xz	
 
 MD5SUM for above GNU/Linux `xz` image ``0ae03ee9daa4918e8e0f04fb7c7d62da``
 
