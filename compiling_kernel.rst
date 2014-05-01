@@ -10,29 +10,27 @@ COMPILING KERNEL
     
         git clone https://github.com/androportal/linux-sunxi.git
 
-
 #. ``cd`` into ``linux-sunxi`` ::
 
         cd linux-sunxi
 
+#. Checkout to desired branch, it this case ``sunxi-3.4``::
 
-#. Checkout to desired branch, it this case ``sunxi-3.0``::
+        git checkout sunxi-3.4
 
-        git checkout sunxi-3.0
-
-#. Compile the a13_configuration(optional, not required if you are using our config file) ::
+#. Compile the a13_configuration(Optional, not required if you are using our config file) ::
 
         make ARCH=arm a13_defconfig
 
+#. Rename kernel config file ::
 
-#. Download the latest *.config* file from `here <https://raw.github.com/androportal/linux-sunxi/sunxi-3.0/.config>`_ 
-   and keep it in the root of the kernel source code directory
+     cp -v config-3.4.79 .config
 
-
-#. A13-OLinuXino customization can be done using(optional) ::
+#. A13-OLinuXino customization can be done using(Optional, if you have
+   followed previous step(i.e you have ``.config`` file in kernel
+   source), don't do this) ::
 
         make ARCH=arm menuconfig
-
 
 #. To compile kernel download and install ``Sourcery CodeBench Lite Edition``, then issue::
 
@@ -42,17 +40,42 @@ COMPILING KERNEL
         
         make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- INSTALL_MOD_PATH=out modules
 
-
 #. To install modules in right path ::
 
         make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- INSTALL_MOD_PATH=out modules_install
 
-
-#.  After successful compilation ``uImage`` will be available at ``arch/arm/boot/uImage`` and
+#.  After successful compilation, ``uImage`` will be available at ``arch/arm/boot/uImage`` and
     also find ``script.bin`` in the root of the directory(This section is subject to change), the
-    kernel modules are available at ``out/lib/modules/3.0.76+/`` 
+    kernel modules are available at ``out/lib/modules/3.4.79+/`` 
     
 
+Compile kernel in a clean way(Optional)
+-----------------------------
+
+1. If you want to keep the kernel source clean and have a kernel build
+   in a separate directory, follow this steps.
+
+#. Assuming you have downloaded the kernel, and you have ``.config``
+   file in the source tree, make a separate directory ``build``
+   outside the kernel source. For example, if the kernel source is in
+   the path ``~/kernel/linux-sunxi``, create ``build`` directory in
+   ``~/kernel/`` ::
+
+     mkdir ~/kernel/build
+
+#. Now move ``.config`` file in build path ::
+
+     mv -v ~/kernel/linux-sunxi/.config ~/kernel/build/
+
+#. Now specify the build directory path to ``make``  ::
+
+     make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage O=~/kernel/build
+     make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- O=~/kernel/build INSTALL_MOD_PATH=out modules
+     make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- O=~/kernel/build INSTALL_MOD_PATH=out modules_install
+
+#. Now your ``uImage`` file will be compiled inside
+   ``~/kernel/build/arch/arm/boot`` directory and all your modules
+   will be placed inside ``~/kernel/build/out`` directory.
 
 KERNEL ON SDCARD
 ----------------
