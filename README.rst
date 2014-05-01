@@ -38,13 +38,10 @@ List of contents
 
 #. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
-#. `Click to download Ubuntu-12.10 based custom lxde image. Uncompress and dd it to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/download.php>`_
+#. `Click to download custom lxde image based Ubuntu-12.10 repositories. Uncompress and dd it to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/aakash_linux_with_all_touchscreens.img.tar.bz2>`_
 
-For wget users  ::
 
-	wget -c http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-Aakash2-Linux-27-08-2013.img.xz	
-
-MD5SUM for above GNU/Linux `xz` image ``0ae03ee9daa4918e8e0f04fb7c7d62da``
+MD5SUM for above GNU/Linux `tar.bz2` image ``bb40bef45d8ff4d01fbed65fb6f0f5b7``
 
 To write(dd) image on an 8GB sdcard, you may use a graphical tool `ddMaker-1.0.1.all.deb <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/ddmaker-1.0.1.all.deb>`_  
 
