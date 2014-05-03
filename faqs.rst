@@ -121,8 +121,8 @@ Frequently asked questions
    want to try on x86 machine then follow these steps:
 
 
-   #. Install `qemu-user-static` from synaptic or do `apt-get install
-      qemu-user-static`
+   #. Install ``qemu-user-static`` from synaptic or do ``apt-get install
+      qemu-user-static``
 
    #. Download and untar aakash-linux from `here
       <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/12.10-lxde-bootLogo-0secUboot-close-expeyes-scilab-Oscad-16-06-2013.img.bz2>`_
