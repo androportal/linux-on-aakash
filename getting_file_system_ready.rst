@@ -150,7 +150,7 @@ as faster than any other desktop enviroment.
    ``/<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.76+/`` to your arm
    ubuntu setup ::
 
-   sudo cp -r /<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.76+/ /media/<ext4 partition of sdcard>/lib/modules/
+        sudo cp -r /<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.76+/ /media/<ext4 partition of sdcard>/lib/modules/
 
 
 #. Download rtl8192cufw.bin from this
