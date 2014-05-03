@@ -5,7 +5,7 @@
 
 `Aakash <http://www.it.iitb.ac.in/aakash2/index.jsp>`_ is a low cost
 computing device/tablet for students, the project is initiated and
-funded by MHRD, Govt. of India. Aakash already runs Android 4.0 with
+funded by MHRD, Govt. of India. It comes pre-installed with Android 4.0 bundled with
 many educational apps developed at IIT Bombay. Please refer to `androportal
 <http://github.com/androportal>`_ for some of the apps.
 
@@ -38,7 +38,7 @@ List of contents
 
 #. `References <https://github.com/androportal/linux-on-aakash/blob/master/references.rst>`_
 
-#. `Click to download custom lxde image based Ubuntu-12.10 repositories. Uncompress and dd it to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/aakash_linux_with_all_touchscreens.img.tar.bz2>`_
+#. `Click to download custom lxde image based on Ubuntu-12.10. Uncompress and dd it to 8GB sdcard <http://www.it.iitb.ac.in/AakashApps/repo/GNU-Linux-on-Aakash/aakash_linux_with_all_touchscreens.img.tar.bz2>`_
 
 
 MD5SUM for above GNU/Linux `tar.bz2` image ``bb40bef45d8ff4d01fbed65fb6f0f5b7``
