@@ -1,5 +1,5 @@
 ========================
-Step to make file system
+Steps to make file system
 ========================
 
 As of now we have uboot and kernel ready for Aakash, the next step is to run few apps, to do so we need Linux file system. One can use any 
@@ -150,7 +150,7 @@ as faster than any other desktop enviroment.
    ``/<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.76+/`` to your arm
    ubuntu setup ::
 
-   sudo cp -r /<path to linux kernel>/linux-sunxi/out/lib/modules/3.0.76+/ /media/<ext4 partition of sdcard>/lib/modules/
+        sudo cp -r /<path to linux kernel>/linux-sunxi/out/lib/modules/3.4.79*/ /media/<ext4 partition of sdcard>/lib/modules/
 
 
 #. Download rtl8192cufw.bin from this
