@@ -33,6 +33,10 @@ as faster than any other desktop enviroment.
 	deb http://ports.ubuntu.com/ubuntu-ports/ precise main universe multiverse restricted
 	deb-src http://ports.ubuntu.com/ubuntu-ports/ precise main  universe multiverse restricted
 
+#. To use the internet in `chroot` environment (for apt-get installs etc.)::
+	
+	cp /etc/resolv.conf /media/<ext4 partition of sdcard>/etc/resolv.conf
+	
 #. Now set up chroot environment manually or use the `ch-mount.sh` script mentioned two steps later::
 
 	sudo mount -t proc /proc /media/<ext4 partion of sdcard>/proc
